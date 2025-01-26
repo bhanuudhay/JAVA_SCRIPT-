@@ -41,3 +41,16 @@ console.log(url.includes('bhanu'))
 const namee = "bhanu-udhay-singh"
 
 console.log(namee.split('-'))
+
+console.log(namee.repeat(2))  // bhanu-udhay-singhbhanu-udhay-singh
+
+let str = '5'
+
+console.log(str.padStart(3,"0"))
+console.log(str.padEnd(3,"0"))
+
+console.log(namee.startsWith('bhanu'))
+console.log(namee.startsWith('b'))
+console.log(namee.startsWith(('u')))
+console.log(namee.endsWith('h'))
+console.log(namee.endsWith("singh"))
