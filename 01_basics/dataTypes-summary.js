@@ -38,12 +38,32 @@ const myFunc = function(){
 } // function
 
 
-console.log(typeof  score)
-console.log(typeof  scoreVal)
-console.log(typeof  isLogged)
-console.log(typeof  outSide)
-console.log(typeof  id)
-console.log(typeof  bigNUm)
-console.log(typeof  ids)
-console.log(typeof  mobj)
-console.log(typeof  myFunc)
+// console.log(typeof  score)
+// console.log(typeof  scoreVal)
+// console.log(typeof  isLogged)
+// console.log(typeof  outSide)
+// console.log(typeof  id)
+// console.log(typeof  bigNUm)
+// console.log(typeof  ids)
+// console.log(typeof  mobj)
+// console.log(typeof  myFunc)
+
+////////////////////////////////////////////////////////////////
+
+/*
+
+primitive(stack) jo bhi variable hai uski ek copy miligi
+non-primitive(heap) sidha reference milta hai
+
+*/
+
+let userOne ={
+    email:"hi@google.com",
+    upi:"hii@ybl"
+}
+let userTwo = userOne;
+
+userTwo.email = "bhanu@gmail.com"
+
+consle.log(userOne.email);
+console.log(userTwo.email);
