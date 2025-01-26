@@ -49,8 +49,8 @@ let str = '5'
 console.log(str.padStart(3,"0"))
 console.log(str.padEnd(3,"0"))
 
-console.log(namee.startsWith('bhanu'))
-console.log(namee.startsWith('b'))
-console.log(namee.startsWith(('u')))
-console.log(namee.endsWith('h'))
-console.log(namee.endsWith("singh"))
+console.log(namee.startsWith('bhanu')) // true
+console.log(namee.startsWith('b')) //true
+console.log(namee.startsWith(('u'))) //false
+console.log(namee.endsWith('h')) //true
+console.log(namee.endsWith("singh")) //true
