@@ -14,7 +14,7 @@ const hundreds = 10000000
 
 //////////////////////////////////Maths/////////////////////////////////////
 
-// console.log(Math)
+console.log(Math) // math jo hai woh ek object hai 
 // console.log(Math.abs(-4))
 // console.log(Math.round(4.3))
 // console.log(Math.ceil(4.2))  // badi value hi lega chah ha kuch bhi likh do 

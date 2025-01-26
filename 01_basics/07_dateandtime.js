@@ -1,4 +1,5 @@
 let mydate = new Date()
+console.log(typeof mydate)
 console.log(mydate.toString())
 console.log(mydate.toDateString()) // sirf date and day  deta hai
 console.log(mydate.toISOString()) // 
@@ -15,7 +16,7 @@ console.log(typeof mydate) // object
 let myCreatedDate = new Date("2025-01-23") // jab ap dd/mm/yy krta hai toh 01 se start hota hai month
 // console.log(myCreatedDate.toLocaleString())
 
-let myTimeStamp = Date.now()
+let myTimeStamp = Date.now() // 1 jan 1970 se abhi tak ka miliseconds mil jaya ga 
 
 console.log(myTimeStamp)
 console.log(myCreatedDate.getTime())
