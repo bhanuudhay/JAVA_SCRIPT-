@@ -22,3 +22,4 @@ console.log(undefined > 0);
 // value  + datatype bhi check kraga
 
 console.log("02" === "2");
+
