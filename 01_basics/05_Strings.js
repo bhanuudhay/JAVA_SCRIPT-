@@ -1,6 +1,7 @@
 const name  = "hello"
 const repoCount = 19
 
+console.log(typeof name)
 //console.log(name+repoCount+"Value");
 
 console.log(`hello my name is ${name} and my repoCount is ${repoCount}`);  // string interpolation // modern syntax

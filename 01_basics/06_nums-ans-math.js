@@ -2,6 +2,7 @@ const num = 100
 const newNum = new Number(1001)
 //console.log(newNum)
 
+console.log(typeof num)
 //console.log(newNum.toString().length) //convert to string
 //console.log(newNum.toFixed(2)) //1001.00 where you want precision when in an ecommerce application
 
