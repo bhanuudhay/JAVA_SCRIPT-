@@ -40,3 +40,31 @@ console.log(Object.values(tinderUser1))
 console.log(Object.entries(tinderUser1))  // object to array 
 
 console.log(tinderUser1.hasOwnProperty('name')) // kya jeh present hai 
+
+// object destructuring 
+
+const course = {
+    courceName : "DSA",
+    price :100,
+    courseInstructor : "Bhanu"
+}
+
+// course.price
+//this is just syntaxixally sugar kra na kra it depend on you 
+
+const {courseInstructor : instructor} = course  // ap name bhi change kr skta ho
+console.log(instructor)
+
+// API : jab bhi apko apna kam kisi aur ke sir pe dalna hai toh api use krta hai 
+
+// {
+//     "name" :"bhanu udhay",
+//     "class" : "3rd year",
+//      "roll-no" : "34"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
