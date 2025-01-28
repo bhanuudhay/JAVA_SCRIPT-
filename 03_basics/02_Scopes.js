@@ -49,8 +49,8 @@ function addone(num)
     return num+1
 }
 
-addtwo(6)  //  now thros error because dur to the concept of hoisting 
-const addtwo = function(num)
+addtwo(6)  //  now throws error because due to the concept of hoisting 
+const addtwo = function addone(num)
 {
     return num+2;
 }
