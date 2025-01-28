@@ -18,7 +18,7 @@
 function one()
 {
     const username  = "bhanu"
-    function two()
+    function two()   
     {
         const name = "udhay"
         console.log(username) // child function woh parent ke data ko access kr pata hai
