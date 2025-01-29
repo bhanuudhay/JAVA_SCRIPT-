@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body  style="background-color: black; color:rgb(163, 90, 0)">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script> 
+    function  addLanguage(langName)
+    {
+       const li =  document.createElement('li')
+       const add  = document.createTextNode(`${langName}`)
+       li.append(add)
+       const el = document.querySelector('.language')
+       el.append(li)
+    }
+     // jahan pe ek problem hai jitni bar yeh method chal rha 
+     //hai utni bar tree ko traverse krna pd rha hai
+     //jo ki sahi cheez nhi hai
+
+    addLanguage("python")
+    addLanguage("java")
+
+    function addlang2(langname)
+    {
+        const li =  document.createElement('li')
+        li.append(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang2("go lang") 
+    // editing of value
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //secondLang.innerText = "gojo"
+    //2nd approach 
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newli)
+
+    //  remove 
+
+    const lastlang = document.querySelector('li :last-child')
+    lastlang.remove()
+</script>
+</html>
