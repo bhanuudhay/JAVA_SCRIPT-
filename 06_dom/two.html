@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style= "background-color: rgb(34, 13, 13); color:rgb(221, 135, 31)">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // yeh jo parent hai sirf us class ko point kr rha hai
+    // aur parent.children us class ke under ke elements
+    // return HTML collection
+    //console.log(parent.children)
+    //console.log(parent.children[1].innerHTML)
+    for (let i = 0; i < parent.children.length; i++) {
+        //console.log(parent.children[i].innerHTML);
+        // tabhi toh operation perform kar pa rha hai
+    }
+    parent.children[1].style.color = 'green'
+
+    // parent se child pe move kr rha hai 
+   // console.log(parent.firstElementChild)
+    //pura ka pura first element  aa gya
+   // console.log(parent.lastElementChild)
+
+    // child se parent pe bhi move kar skta ho
+
+    const dayone = document.querySelector('.day')
+    // want to go to its parent
+    // console.log(dayone)
+    // console.log(dayone.parentElement)
+    // console.log(dayone.nextElementSibling)
+    //next iska bhai/behen print krwa dega
+
+    console.log("Nodes : " , parent.childNodes)// imp  hai yeh
+    // yeh childNodes pura ka pura ek structure deta hai
+    // in output  0: text   matlab apna enter kiya
+    
+</script>
+</html>
