@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>SET BACKGROUND Color</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading">IMAGE BACKGROUND COLOR</h1>
+        <span class="button" id="img1">Color 1</span>
+        <span class="button" id="img2">Color 2</span>
+        <span class="button" id="img3">Color 3</span>
+    </div>
+    <h1 style="text-align: center;"> Click on color and see magic </h1>
+</body>
+<script>
+    const button = document.querySelectorAll('.button')
+    // console.log(button)
+    const body = document.querySelector('body')
+    // console.log(body)
+
+    button.forEach( (button) =>{
+        // console.log(button)
+        button.addEventListener('click' , (el)=>{
+            // console.log(el)
+            // console.log(el.target) // target uska feature deta hai
+            if(el.target.id == 'img1'){
+                document.body.style.backgroundColor = '#ffcccc';
+            }
+            if(el.target.id  == 'img2'){
+                document.body.style.backgroundColor = '#ccffcc';
+            }
+            if(el.target.id == 'img3')
+            {
+               document.body.style.backgroundColor = '#ccccff';
+            }
+        })
+    })
+
+</script>
+</html>
