@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM LEARNING</title>
+    <style>
+        .bg-black{
+            background-color: rgb(31, 25, 18);
+            color: #fff;
+        }
+    </style>
+</head>
+<body class = "bg-black">
+    <div>
+        <h1 id= "title" class = "heading "> DOM LEARNING  <span style=" display :none"> test content</span></h1> 
+        <h2> Lorem ipsumepe voluptatibus reiciendis</h2>
+        <h3> Lorem ipsumepe voluptatibus reiciendis</h3>
+        <p>Lorem ipsumepe voluptatibus reiciendis libero?<br>
+        inner text : jo dikh rha hai <br>
+        textContent : everything in that <br>
+        innerHTML : ko bhi html likh rakha hai woh bhi milaga <br>
+        querySelector : isme meh ham sidha tag ko '' isme put krka access kr skta hai<br>
+        querySelectorAll : access all the element in that document(node list)<br>
+        .getElementByClassName : return HTMLCollections <br>
+        this htmlcollection do not have any function so we need to convert it to perform operation<br>
+        main question is how to convert  use Array.from(val)  : const val = document.getElementByClassName('list')<br>
+        agar class ko access krna ho toh .classname se access krna pdta hai
+
+        </p>
+    </div> 
+    <ul>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">three</li>
+    </ul>
+    
+</body>
+</html>
