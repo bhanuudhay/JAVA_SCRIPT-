@@ -1,0 +1,21 @@
+.html
+{
+    margin :0
+}
+.list{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type:none;
+    
+}
+
+.button
+{
+  padding : 10px 20px;
+  background-color: aqua;
+}
+#result
+{
+    color:rgb(255, 0, 0);
+}
