@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const nameprint = function() {
+    //     console.log("bhanu")
+    // } 
+    function changeH1 (){
+        document.querySelector('h1').innerHTML = "Best js script hai"
+    }
+    const timeout1 = setTimeout(changeH1,6000)  // handler ek function ha
+    // 2 sec ka time uska badh kuch krunga
+
+    document.querySelector('#stop').addEventListener('click' , function(){
+        clearTimeout(timeout1)
+        console.log("Stopped")
+    })
+</script>
+</html>
