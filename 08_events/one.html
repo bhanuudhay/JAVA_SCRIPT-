@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EVENTS</title>
+</head>
+<body style="background-color: #414141;color:aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // all events in java script run sequentially
+
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+    // yeh upar wala feature kam deta hai 
+
+    /*document.getElementById('owl').addEventListener( 'click' , function(){
+        alert("Owl clicked again")
+    },false)  // bydefault false hota hai 
+
+    // atttachevent 
+    // Jquery -> on
+    */
+
+   /*document.getElementById('owl').addEventListener( 'click' , function(e){
+    // e here is event object  // browser or mouse event
+    console.log(e)
+    //type , timestamp , preventDefault 
+    // target , toElement , srcElement , currentTarget
+    // clientX , clientY ,screenX ,screenY
+    //altkey , ctrlkey ,shiftkey , keycode
+   },false) */
+
+    // event propogation - bubbling
+    // document.getElementById('images').addEventListener('click' , function(){
+    //     console.log("click inside the url")
+    // } ,false)
+
+    //  document.getElementById('owl').addEventListener('click' , function(){
+    //     console.log("clicked owl")
+    // } ,false)
+
+    //event-propogaton - capturing false ->true
+    //  document.getElementById('images').addEventListener('click' , function(e){
+    //     console.log("click inside the url")
+    // } ,true)
+
+    //  document.getElementById('owl').addEventListener('click' , function(e){
+    //     console.log("clicked owl")
+    // } ,true)
+
+    //to stop propogation
+
+    // document.getElementById('images').addEventListener('click' , function(e){
+    //     console.log("click inside the url")
+    // } ,false)
+
+    //  document.getElementById('owl').addEventListener('click' , function(e){
+    //     console.log("clicked owl")
+    //     e.stopPropagation()
+    // } ,false)
+
+
+    // event bubbling or event capturing 
+    //bubbling matlab niche se upar jata hai down totop
+    // capturing jata hai top se botton
+
+    // by defaultevent
+
+    // document.getElementById('google').addEventListener('click' , function(e){
+    //     e.preventDefault()
+    //     console.log("google clicked")
+    // } , false)
+
+
+    // e.target = sirf us element ko target krta hai
+    // e.target.parentNode = woh element kiska under store hai like <li> or <ul>
+    // e.target.tagName = matlab woh kya cheez hai IMG hai or DIV ot LI or UL
+    // e.target.id = uski id meh kya value hai 
+    
+
+
+    document.getElementById('images').addEventListener('click' , function(e){
+        console.log(e.target.parentNode ); // kahan s aaya hai
+        //parentNode -> target sirf image ko lata hai par parentNode jisme woh store hai like <li> ko fetch krta hai
+            console.log(e.target.tagName)
+            if(e.target.tagName == 'IMG')
+            {
+                let removeIt = e.target.parentNode;
+                removeIt.remove()  // remove only the img 
+            }
+
+            // this above things is event spill over 
+            // if the above code in block is outside
+            // then if u click on li it will go to parentNode that is ul and then delete whole li
+
+         // remove se woh remove ho jaya ga
+      //  removeIt.parentNode.removeChild(removeIt)
+    },false)
+</script>
+</html>
