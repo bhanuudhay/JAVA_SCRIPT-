@@ -40,7 +40,7 @@
     console.log(e)
     //type , timestamp , preventDefault 
     // target , toElement , srcElement , currentTarget
-    // clientX , clientY ,screenX ,screenY
+    // {clientX , clientY} = viewPort , {screenX ,screenY} = entire scrren
     //altkey , ctrlkey ,shiftkey , keycode
    },false) */
 
@@ -102,6 +102,10 @@
                 let removeIt = e.target.parentNode;
                 removeIt.remove()  // remove only the img 
             }
+            console.log(e.type);
+            console.log(e.target);
+            console.log('Mouse Position (client):', 'X:', e.clientX, 'Y:', e.clientY);
+            console.log('Mouse Position (screen):', 'X:', e.screenX, 'Y:', e.screenY);
 
             // this above things is event spill over 
             // if the above code in block is outside
