@@ -45,6 +45,17 @@ Welcome to my JavaScript Study Repository! 🎉 This is a collection of notes, e
 - **three.html**: Learning to create new elements in the DOM.
 - **two.html**: Additional practice and notes on various concepts.
 
+### 7. Projects
+- **Color Change Background**: Changes the background color when clicking on an image.
+- **Time Watch**: A simple watch that displays the current time.
+- **BMI Calculator**: A tool to calculate Body Mass Index.
+- **Calculate Age**: Computes age based on the birthdate provided.
+- **Random Background**: Uses a random library to change the background every second. Clicking "Stop" halts the color change, while "Start" resumes it using `setInterval`.
+
+### 8. Events
+- **Event Listener Study**: Explores how to use `addEventListener` to manage events.
+- **Async Operators**: Delve into asynchronous programming and the use of async/await for handling promises.
+
 ## 🔍 What I've Learned
 
 Throughout this journey, I've tackled a range of topics, including:
