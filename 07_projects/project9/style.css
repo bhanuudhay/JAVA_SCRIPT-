@@ -1,0 +1,67 @@
+.head1{
+    color:rgba(158, 117, 3, 0.753);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.input{
+    border: 2px solid black;
+}
+.submit{
+    background-color: bisque;
+}
+.innerDiv{
+    background-color: black;
+    border-color: bisque;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerdiv {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.image-box {
+    margin-bottom: 20px;
+}
+
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between boxes */
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.followers {
+    color: #555;
+}
+
+.location a {
+    color: #007BFF; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
