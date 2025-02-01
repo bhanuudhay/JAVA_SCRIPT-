@@ -107,3 +107,12 @@ fetch("https://api.github.com/users/bhanuudhay")
 {
     console.log("error")
 })
+
+// macro task queue for fetch 
+// when you implement fetch it go for two task
+// 2nd is  web browser/ node
+//1nd is  data  - mwmory meh space reserve krta hai 
+// inside data  two array onfullfilled(resolve) & on rejection (reject)
+// in webrowser/node you get networ request - ja toh jayagi ya nhi jayagi
+// agar network chali gyi toh woh jayagi on fulllled meh otherwise agar req nhi gyi toh woh on rejection meh jayagi
+// also error like 404 also count in network req acceptred
