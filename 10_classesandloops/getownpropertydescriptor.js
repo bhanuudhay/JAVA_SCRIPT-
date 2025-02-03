@@ -15,7 +15,7 @@ const chai = {
 
 console.log(Object.getOwnPropertyDescriptor(chai ,  "name"))  // agar sirf chai likho ge toh error aayaga  kyunki chai toh ek object object hai 
 // toh isliye second parameter dena padta hai 
-Object.defineProperty(chai, 'name', {
+Object.defineProperty(chai, 'name', { // kiski property set krni hai aur konsi krni hai  
    // writable: false,
     enumerable: true,
 })

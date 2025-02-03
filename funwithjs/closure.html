@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">Green</button>
+    <script>
+        //lexical scoping 
+        /*
+        means function ke ander function 
+        innner function ko outer function ke variable ka access milaga
+        eg :=
+        function outer()
+        {
+        let ans =1;
+            funcTion inner()
+            {
+                console.log(Inner : ans)  // yeh print hoga 
+             }
+        }
+            console.log(Inner : ans) // yeh nhi hoga  
+
+            isko lexical scoping kehta hai
+
+            //bhai bhai aapas meh share nhi krenge
+        */
+
+        /*
+        closure property meh pura ka pura lexical scope jata hai na ki functional context 
+        //lexical scope return hota hai lexical scope 
+        lexical scope bolna jruri hai
+         */
+    </script>
+
+    <script>
+        // document.getElementById('orange').onclick = function()
+        // {
+        //     document.body.style.backgroundColor ="orange"
+        // }
+        // document.getElementById('green').onclick = function()
+        // {
+        //     document.body.style.backgroundColor ="green"
+        // }
+
+        function cliclHandle(color){
+            // document.body.style.backgroundColor = `${color}`
+            return function()
+            {
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+        
+        document.getElementById('orange').onclick = cliclHandle("orange")
+        document.getElementById('green').onclick = cliclHandle("green")
+    </script>
+</body>
+</html>

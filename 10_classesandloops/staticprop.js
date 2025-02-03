@@ -15,5 +15,6 @@ class User{
     }
 }
 
+
 const user1 = new User("bhanu")
 console.log(user1.createId())
