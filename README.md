@@ -1,4 +1,4 @@
-# 📚 My JavaScript Learning Journey
+## 📚 My JavaScript Learning Journey
 
 Welcome to my JavaScript Study Repository! 🎉 This is a collection of notes, exercises, and projects that showcase what I’ve learned so far in my journey to master JavaScript. Whether you're a fellow learner or just curious, I hope you find this useful!
 
@@ -64,3 +64,29 @@ Throughout this journey, I've tackled a range of topics, including:
 - **Functions**: Understanding function declarations, expressions, and the magic of IIFEs and arrow functions.
 - **Control Flow**: Mastering conditional statements and loops to control the flow of my programs.
 - **DOM Manipulation**: Gaining hands-on experience with basic DOM manipulation to create dynamic web pages.
+
+---
+
+### 9. Advanced Concepts
+- **Promises**: Understanding promises, how to handle asynchronous operations, and working with `.then()`, `.catch()`, and `async/await`.
+- **API Requests**: Making HTTP requests using `fetch`, handling JSON responses, and working with RESTful APIs.
+- **Error Handling**: Using `try/catch` blocks, understanding errors in asynchronous code, and dealing with exceptions.
+
+### 10. Object-Oriented Programming (OOP)
+- **Classes & Inheritance**: Learning about classes, inheritance, constructors, and how to create objects with classes.
+- **Getter & Setter Methods**: Defining and using getter and setter methods to control property access and modification.
+- **Static Properties & Methods**: Working with static properties and methods to define functionality that doesn't rely on instance properties.
+- **Prototype & Prototype Chain**: Understanding the prototype chain, adding methods to the prototype, and inheritance in JavaScript.
+- **Object Descriptors**: Using `Object.getOwnPropertyDescriptor` to inspect and define object property attributes like `writable`, `configurable`, and `enumerable`.
+
+### 11. Miscellaneous Topics
+- **Bind, Call, and Apply**: Understanding how to use `bind()`, `call()`, and `apply()` to control the `this` context in functions.
+- **Event Delegation**: Implementing event delegation to optimize event handling and manage dynamic content.
+- **Modules**: Learning how to use JavaScript ES6 modules (`import/export`) to organize and separate code.
+- **Memory Management**: Understanding how JavaScript handles memory, including garbage collection and heap vs. stack memory.
+
+---
+
+Feel free to explore the projects, notes, and exercises in this repository to deepen your understanding of JavaScript and its powerful features!
+
+Happy coding! 🎉
