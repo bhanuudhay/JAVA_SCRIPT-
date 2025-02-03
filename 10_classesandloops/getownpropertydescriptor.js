@@ -29,3 +29,5 @@ for(let [key,value] of Object.entries(chai))  // not iterable likh ke aayaga
 }
 
 // main point is file ka yeh hai ki ham kisi bhi object ki properties dekh skta hai jo bhi unko inbuild milti hai 
+//  aaisa ham sirf isko browser peh dekh skta hai but node meh dekhna ke liya yeh use krna padta hai 
+
